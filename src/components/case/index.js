@@ -6,9 +6,8 @@ import { Link } from "react-router-dom";
 import { useAuth } from "../../context/user";
 
 
-import cs1 from "./img/img-1";
-// import cs2 from "../../images/case/img-2.png";
-// import cs3 from "../../images/case/img-3.png";
+import cs1 from "./img/img-1.png";
+
 
 import "./style.css";
 import axios from "axios";

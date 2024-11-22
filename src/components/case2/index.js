@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../context/user";
-import cs1 from "./img/img-1";
+import cs1 from "./img/img-1.png";
 
 
 import "./style.css";
