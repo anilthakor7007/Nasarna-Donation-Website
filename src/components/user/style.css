@@ -1,0 +1,87 @@
+.card-custom {
+    padding: 8px;
+    border-radius: 7px;
+    background-color: #f9f9f9;
+  }
+
+
+  .card-img-custom {
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .small-text {
+    font-size: 0.9rem;
+  }
+  
+  .card-title {
+    font-size: 1rem;
+    color: #333;
+  }
+  .list-group{
+    flex-direction: row !important;
+  }
+  
+  .list-group-item {
+    padding: 6px;
+  }
+  
+  .text-primary {
+    color: #54c77d !important;
+  }
+  .profile-card {
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fdfdfd;
+  }
+  
+  .profile-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .heading-small {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 10px;
+  }
+  
+  .profile-card p {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .profile-card strong {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .bg-primary {
+    background-color: #007bff !important;
+    color: #ffffff;
+  }
+  
+  .text-muted {
+    color: #6c757d !important;
+  }
+  
+  .hr {
+    border: 0.5px solid #ddd;
+    margin: 15px 0;
+  }
+  
+  .card-profile{
+    height: 350px;
+  }
+
+  .useBody{
+    width: 90%;
+  }
+
+  .card-header{
+    background: linear-gradient(135deg, #54c77d, #54c77d);
+  }
+
+  .textcolor{
+    color: #54c77d;
+  }
