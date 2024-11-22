@@ -1,7 +1,7 @@
 {
   "name": "nasarna",
   "version": "0.1.0",
-  "homepage": "http://nasarna-react.wpocean.com",
+  "homepage": "https://nasarna-donation-website.vercel.app/home",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",

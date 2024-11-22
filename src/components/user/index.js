@@ -28,7 +28,7 @@ const User = () => {
     const isConfirmed = window.confirm("Are you sure you want to log out?");
     if (isConfirmed) {
       logout();
-      navigate("/");  // Redirect to home page after logout
+      navigate("/");  
     }
   };
 

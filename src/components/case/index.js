@@ -31,7 +31,7 @@ const CaseSlide = () => {
 
   const getCauseData = async () => {
     try {
-      const { data } = await axios.get("http://localhost:5005/api/causes");
+      const { data } = await axios.get("https://nasarna-backend.onrender.com/causes");
 
       const formattedData = data
         .filter((causeItem) => !causeItem.isDelete)
