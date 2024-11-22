@@ -1,29 +1,11 @@
 import React from "react";
 
-import pmt1 from "../../../navarna/src/images/checkout/img-1.png";
-import pmt2 from "../../../navarna/src/images/checkout/img-2.png";
-import pmt3 from "../../../navarna/src/images/checkout/img-3.png";
-import pmt4 from "../../../navarna/src/images/checkout/img-4.png";
 
 const OnlineDonation = () => {
   return (
     <div className="container pt-5">
       <div id="open5" className="payment-name">
-        {/* Removed the title and radio buttons, just showing images in a row */}
-        {/* <ul className="list-unstyled d-flex  mb-4">
-          <li>
-            <img src={pmt1} alt="Visa" className="img-fluid" />
-          </li>
-          <li>
-            <img src={pmt2} alt="Mastercard" className="img-fluid" />
-          </li>
-          <li>
-            <img src={pmt3} alt="Stripe" className="img-fluid" />
-          </li>
-          <li>
-            <img src={pmt4} alt="PayPal" className="img-fluid" />
-          </li>
-        </ul> */}
+
 
         {/* Form Section */}
         <div className="contact-form form-style">
