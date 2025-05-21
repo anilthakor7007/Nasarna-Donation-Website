@@ -4,6 +4,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../context/user";
+import {
+  useGetCauseQuery
+} from "../../services/causeApi";
 
 
 import cs1 from "./img/img-1.png";
@@ -14,9 +17,37 @@ import axios from "axios";
 
 const CaseSlide = () => {
   const { authData } = useAuth();
-  console.log(authData);
+  // console.log(authData);
   
   const [causeData, setCauseData] = useState([]);
+  const {data, error, isLoading} = useGetCauseQuery();
+  useEffect(() => {
+    if (data) {
+      const formatted = data
+        .filter((causeItem) => !causeItem.isDelete)
+        .map((causeItem) => ({
+          ...causeItem,
+          raisedFormatted: formatCurrency(causeItem.raised),
+          goalFormatted: formatCurrency(causeItem.goal),
+          progressPercentage: calculateProgress(
+            causeItem.raised,
+            causeItem.goal
+          ),
+        }));
+  
+      setCauseData(formatted);
+      // console.log(formatted, "formattedData");
+    }
+  }, [data]);
+  
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
+  // console.log(data, "data");
 
   const formatCurrency = (amount) => {
     return new Intl.NumberFormat("en-US", {
@@ -29,32 +60,8 @@ const CaseSlide = () => {
     return ((raised / goal) * 100).toFixed(1);
   };
 
-  const getCauseData = async () => {
-    try {
-      const { data } = await axios.get("https://nasarna-backend.onrender.com/causes");
+  
 
-      const formattedData = data
-        .filter((causeItem) => !causeItem.isDelete)
-        .map((causeItem) => ({
-          ...causeItem,
-          raisedFormatted: formatCurrency(causeItem.raised),
-          goalFormatted: formatCurrency(causeItem.goal),
-          progressPercentage: calculateProgress(
-            causeItem.raised,
-            causeItem.goal
-          ),
-        }));
-
-      setCauseData(formattedData);
-      console.log(formattedData);
-    } catch (error) {
-      console.error("Error fetching data: ", error);
-    }
-  };
-
-  useEffect(() => {
-    getCauseData();
-  }, []);
 
   const settings = {
     dots: false,
