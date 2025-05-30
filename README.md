@@ -38,7 +38,7 @@ Donor Credentials for Testing : [ Customer Credentials : ricky@gmail.com , Secur
 - **Frontend**: React.js
 - **Styling**: Tailwind CSS
 - **Routing**: React Router
-- **State Management**: React Hooks / Context API
+- **State Management**: Redux Toolkit
 - **Payments**: Razorpay or Stripe
 - **Hosting**: Vercel
 
