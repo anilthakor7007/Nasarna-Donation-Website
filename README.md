@@ -2,7 +2,9 @@
 
 A secure and user-friendly donor portal built for **Nasarna Helping Hand Donation Trust**. This platform enables donors to log in, view their donation history, and make online or offline donations with ease and transparency. Designed to build trust and offer complete visibility into each contribution.
 
-🔗 **Live Website**: (https://nasarna-donation-website.vercel.app/))
+🔗 **Live Website**: (https://nasarna-donation-website.vercel.app/)
+
+Donor Credentials for Testing : [ Customer Credentials : ricky@gmail.com , SecureP@ss123 ]
 
 ---
 
